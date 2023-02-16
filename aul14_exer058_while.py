@@ -2,19 +2,21 @@
 
 from random import randint
 computador=randint(1,10)
-jogador=int(input('Digite um número_'))
-vezes=0
+print('computador escolheu {}'.format(computador))
+print('Digite um numero entre 0 e 10.')
+jogador=int(input(''))
+vezes=1
 
 while computador!=jogador:
-    jogador=int(input('Tente de novo_'))
+    #jogador=int(input('Tente outra vez_'))
     vezes+=1
-
     if jogador>computador:
-        print('menos..')
+        print('É menos...')
     else:
-        print('mais..')
+        print('É mais...') 
+    jogador=int(input('Tente de novo_'))  
 
-print('Você tentou {} para acertar'.format(vezes))
+print('Você tentou {} vezes para acertar.'.format(vezes))
 
 
 
