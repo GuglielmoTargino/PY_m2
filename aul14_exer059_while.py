@@ -1,12 +1,12 @@
 #programa para se montar um menu de opções entre dois numeros
-n1=int(input('digite o primeiro numero_'))
-n2=int(input('digite o segundo numero_'))
+n1=int(input('Digite o primeiro numero_'))
+n2=int(input('Digite o segundo numero_'))
 opcao=0
 resultado=0
 
 
 while opcao!=5:
-    print('''escolha a opcao 
+    print('''escolha a opção
     [1]soma
     [2]multiplica
     [3]maior
@@ -21,18 +21,18 @@ while opcao!=5:
 
     if opcao==2:
         resultado=n1*n2
-        print('A multiplicação é {}'.format(resultado))
+        print('O resultado da multiplicação é {}'.format(resultado))
 
     if opcao==3:
         if n1>n2:
             maior=n1
         else:
             maior=n2
-        print('O maior numero é {}'.format(maior))
+        print('O maior número é {}'.format(maior))
 
     if opcao==4:
-        n1=int(input('digitep primeiro numero de novo_'))
-        n2=int(input('digite segundo numero novo_'))
+        n1=int(input('Digitep primeiro numero de novo_'))
+        n2=int(input('Digite segundo numero novo_'))
 
     if opcao==5:
         print('<<<<<< Programa finalizado >>>>>>')
