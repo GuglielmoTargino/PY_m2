@@ -17,6 +17,3 @@ while mais!=0:
     termos+=mais    # linha para aumentar o limite do contador
 
 print('Final com {} termos'.format(termos))
-
-
-
