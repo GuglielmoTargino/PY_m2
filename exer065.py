@@ -7,8 +7,8 @@ menor=maior=0
 ctor=soma=media=0
 
 while fg!='N':
-    nr=int(input('digitw um numero_'))
-    fg=str(input('deseja cntinuar? [S/N]_')).upper().strip()[0]
+    nr=int(input('Digite um número_'))
+    fg=str(input('Deseja continuar?_ [S/N]_')).upper().strip()[0]
     if ctor==0:
         menor=nr
     if nr>maior:
@@ -19,6 +19,6 @@ while fg!='N':
     soma+=nr
     media=soma/ctor
 
-print('Soma={},Média ={:.2f}, maior={}, menor={}'.format(soma,media,maior,menor))
+print('Soma={}, Média={:.2f}, o maior foi={}, o menor foi ={}'.format(soma,media,maior,menor))
 
 
