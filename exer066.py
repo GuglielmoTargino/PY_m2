@@ -3,7 +3,7 @@
 ctor=soma=0
 while True:
     nr=int(input('digite_ ou 999 para parar_ '))
-    if nr==999:
+    if nr==999: # a flag é 999
         break
     soma+=nr
     ctor+=1
