@@ -7,4 +7,5 @@ while True:
         break
     soma+=nr
     ctor+=1
-print('foram digitados {}, e a soma é {}'.format(ctor,soma))
+#print('foram digitados {}, e a soma é {}'.format(ctor,soma))
+print(f'Foram digitados {ctor} numeros, e a soma é {soma}')# nova forma de imprimir na versão nova do pythom.
