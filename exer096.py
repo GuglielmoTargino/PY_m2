@@ -1,9 +1,14 @@
 #programa para analisar dados de uma lista de pessoas cadastradas
 
 ctdora=ctdoro=ctdorm=ctdorg=0
+sexo=bda=' '
+
 while True:
     idade=int(input('digite a idade em anos_'))
-    sexo=str(input('digite o sexo [M/F]')).strip().upper()[0]
+
+    while sexo not in 'MF':# linha para garantir digitação correta por parte do usuario.
+        sexo=str(input('digite o sexo [M/F]')).strip().upper()[0]
+
     ctdorg+=1 # contador geral de pessoas inseridas
 
     if idade>18: # linha para contar os maiores de idade
@@ -13,7 +18,8 @@ while True:
         ctdoro+=1
     elif idade<20: #linha para incrementar o conyador feminino menor de 18 anos de idade
         ctdorm+=1
-    bda=str(input('deseja continuar?_[S/N]')).strip().upper()[0] # #linha para flag de parada
+    while bda not in 'SN':#linha para garantir digitação correta por parte do usuario.
+        bda=str(input('deseja continuar?_[S/N]')).strip().upper()[0] # #linha para flag de parada
 
     if bda=='N':
         break
