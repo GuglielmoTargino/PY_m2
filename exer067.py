@@ -1,3 +1,4 @@
+#programa de tabuada usando laço while
 
 tb=int(input('Digite qual tabuada vc quer saber_'))
 ctor=0  # contador iiciado em zero
