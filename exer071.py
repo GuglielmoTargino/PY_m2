@@ -2,12 +2,12 @@
 
 saque=int(input('Digite quanto vc que sacar_ R$'))
 ctdr=0 # contador para guardar a quantidade de notas.
-while saque>=50:
+while saque>=50:      
     saque-=50
     ctdr+=1
-print(f'{ctdr} Notas de R$50.00.')
-ctdr=0
 
+print(f'{ctdr} Notas de R$50,00.')
+ctdr=0
 while saque>=20:
     saque-=20
     ctdr+=1
